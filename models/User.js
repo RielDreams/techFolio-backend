@@ -4,9 +4,14 @@ const Schema = mongoose.Schema;
 const userSchema = new Schema(
 	{
 		name: String,
+		occupation: String,
+		bio: String,
+		skills: [String],
 		email: String,
 		password: String,
-		portfolio: {type: Schema.Types.ObjectId, ref: 'portfolio'},
+		portfolio: [{type: Schema.Types.ObjectId, ref: 'portfolio'}],
+		linkedin: String,
+		github: String,
 		uid: String,
 	},
 	{
