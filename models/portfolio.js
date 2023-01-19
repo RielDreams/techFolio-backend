@@ -3,13 +3,15 @@ const Schema = mongoose.Schema;
 
 const portfolioSchema = new Schema(
 	{
-		bio: String,
+		title: String,
+		summary: String,
 		skills: String,
-		gitScreenShots: String,
+		screenShots: String,
 		github: String,
 		linkedin: String,
 		facebook: String,
 		url: [String],
+		uid: String,
 	},
 	{
 		timestamps: true,
