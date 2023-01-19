@@ -3,9 +3,10 @@ const Schema = mongoose.Schema;
 
 const portfolioSchema = new Schema(
 	{
-		bio: String,
+		name: String,
+		summary: String,
 		skills: String,
-		gitScreenShots: String,
+		screenShots: String,
 		github: String,
 		linkedin: String,
 		facebook: String,

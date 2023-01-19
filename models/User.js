@@ -6,6 +6,7 @@ const userSchema = new Schema(
 		name: String,
 		email: String,
 		password: String,
+		portfolio: {type: Schema.Types.ObjectId, ref: 'portfolio'}
 	},
 	{
 		timestamps: true,
